@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 200;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.section-title {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+    transition: text-shadow 1s ease;
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/banner.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-logo {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+.header-list li:not(:first-child) {
+    margin-left: 60px;
+}
+
+.header-link {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+.header-title {
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    margin: 15px 0;
+    transition: text-shadow 1s;
+}
+
+.header-title:hover {
+    text-shadow: 0 0 30px white, 0 0 30px white;
+}
+
+.section-pad {
+    padding: 13vh 0;
+}
+
+.header-text {
+    color: white;
+    line-height: 1.5;
+}
+
+.header-info-cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+
+}
+
+.header-left-box,
+.header-right-box {
+    flex-basis: 50%;
+}
+
+.header-card {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 1s ease;
+
+}
+
+.header-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-1 {
+    background: url(../img/img7.jpg) top no-repeat;
+    background-size: cover;
+}
+
+.card-2 {
+    background: url(../img/img2.jpg) top no-repeat;
+    background-size: cover;
+}
+
+.card-3 {
+    background: url(../img/igm3.jpg) top no-repeat;
+    background-size: cover;
+}
+
+.card-4 {
+    background: url(../img/img4.jpg) top no-repeat;
+    background-size: cover;
+}
+
+/* -----------about------------------- */
+.about-section {
+    width: 100%;
+    color: white;
+    background: rgb(10, 10, 10);
+}
+
+.about-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* -----------parallax------------------- */
+
+.parallax-section {
+    width: 100%;
+    height: 30vh;
+    background: url(../img/banner.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* -----------mission------------------- */
+
+.mission-section {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+.mission-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-mission-box,
+.right-mission-box {
+    flex-basis: 50%;
+}
+
+.row-1 {
+    display: flex;
+}
+.row-1>div {
+    height: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    flex-basis: 50%;
+    overflow: hidden;}
+
+.row-2>div {
+    height: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    flex-basis: 50%;
+    overflow: hidden;
+}
+.mission-body img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.mission-body p{
+    color: white;
+    margin:20px;
+}
+
+/* --------------------history------------------- */
+
+.history-section{
+    width:100%;
+    height:80vh;
+    background: linear-gradient(239deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%),url(../img/nasa-OLlj17tUZnU-unsplash.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.history-body{
+    color: white;
+    max-width:70%;
+}
+.history-body h3{
+   font-size:18px;
+   text-transform: uppercase;
+   margin:80px 0 40px;
+}
+.readmore-btn{
+    font-size: inherit;
+    background: none;
+    color: white;
+    font-family: inherit;
+    margin-top:10px;
+    border-bottom: 1px solid white;
+}
+#readMoreText{
+    display: none;
+}
+/* --------------------POSTS------------------- */
+ .post-section{
+    background-color: rgb(10, 10, 10);
+    color: white;
+ }
+ 
+ .post-cards{
+     display: grid;
+     grid-template-columns:repeat(auto-fit,minmax(250px,1fr)) ;
+ }
+
+ .post-cards .img-content img{
+     width:100%;
+     height:100%;
+     object-fit:cover;
+ }
+.card{
+    cursor: pointer;
+}
+.post-cards h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.showmore-btn{
+    font-size: inherit;
+    background: none;
+    color: white;
+    font-family: inherit;
+    margin-top: 70px;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.card{
+    display: none;
+}
